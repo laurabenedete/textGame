@@ -3,14 +3,13 @@ const Vilao = require("../personagens/vilao");
 
 module.exports = (heroi) =>  {
  const vilaoreturn = new Vilao(300,50,50);
-  vilaoreturn.aumentarSeg(1000);
-  vilaoreturn.status();
-
 console.log(`No instante em que Malachai conclui o ritual, seus olhos sombrios encontram os de ${heroi.nome}. Uma faísca intensa de reconhecimento e desafio atravessa o ar carregado de magia.`);
 console.log();
 console.log(`As trevas ao redor agitam-se, criando um redemoinho de energia sinistra. Num movimento fluido, Malachai avança em direção a ${heroi.nome}, lançando feitiços e sombras, dando início a uma dança mortal entre luz e escuridão.`);
 console.log();
-
+vilaoreturn.aumentarSeg(1000);
+  vilaoreturn.status();
+ 
 function luta(heroi){
 let rodada = 1;
 
@@ -56,7 +55,7 @@ while(heroi.vida > 1 &&  vilaoreturn.vida > 1){
   console.log();
   console.log(`Entre velas tremeluzentes e inscrições profanas, criaturas espectralmente revividas emergem, ganhando nova vida com uma energia corrompida. O ar é permeado por uma aura sinistra enquanto Malachai, imerso em sua prática arrepiante, tece o destino de uma batalha iminente.`);
 
-      console.log("Preparece, la vem a luta.");
+      console.log("Prepare-se, la vem a luta.");
       if(luta(heroi)){
         console.log("A paz retorna à terra, os mortos que seguiam Malachai agora voltam ao sono eterno, e as sombras que antes dominavam agora se dissipam, substituídas pela luz radiante que ela trouxe àquele momento crucial.");
           heroi.depositar(1000);
