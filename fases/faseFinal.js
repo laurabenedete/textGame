@@ -58,7 +58,7 @@ while(heroi.vida > 1 &&  vilaoreturn.vida > 1){
 
       console.log("Preparece, la vem a luta.");
       if(luta(heroi)){
-        console.log("A paz retorna à terra, e as sombras que antes dominavam agora se dissipam, substituídas pela luz radiante que ela trouxe àquele momento crucial.");
+        console.log("A paz retorna à terra, os mortos que seguiam Malachai agora voltam ao sono eterno, e as sombras que antes dominavam agora se dissipam, substituídas pela luz radiante que ela trouxe àquele momento crucial.");
           heroi.depositar(1000);
           heroi.restaurar();
           heroi.status();
